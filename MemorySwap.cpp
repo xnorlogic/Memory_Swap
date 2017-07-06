@@ -17,7 +17,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	//Memory Swap------------------------------------------------------------------------------
 	memcpy(temp, Mem_Loc + 0 * sizeD, sizeD);
-    memcpy(Mem_Loc + 0 * sizeD, Mem_Loc + 1 * sizeD, sizeD);
+        memcpy(Mem_Loc + 0 * sizeD, Mem_Loc + 1 * sizeD, sizeD);
 	memcpy(Mem_Loc + 1 * sizeD, temp, sizeD);
 	//-----------------------------------------------------------------------------------------
 
