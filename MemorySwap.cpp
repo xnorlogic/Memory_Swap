@@ -17,8 +17,8 @@ int _tmain(int argc, _TCHAR* argv[])
 	//unsigned char* temp = (unsigned char*) malloc(sizeD);          //--> This is comand for C
 
 	//Memory Swap------------------------------------------------------------------------------
-	memcpy(temp, Mem_Loc + 0 * sizeD, sizeD);
-    memcpy(Mem_Loc + 0 * sizeD, Mem_Loc + 1 * sizeD, sizeD);
+	memcpy(temp, Mem_Loc + 0 * sizeD, sizeD); //Commit test
+        memcpy(Mem_Loc + 0 * sizeD, Mem_Loc + 1 * sizeD, sizeD);
 	memcpy(Mem_Loc + 1 * sizeD, temp, sizeD);
 	//-----------------------------------------------------------------------------------------
 
