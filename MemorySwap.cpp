@@ -7,7 +7,7 @@ using std::cout;
 int _tmain(int argc, _TCHAR* argv[])
 {
 	int ARRAY_DATA[] = {100, 200};              //Array data
-	unsigned char *Mem_Loc = (byte*)ARRAY_DATA; //Memory location of the array data
+	unsigned char *Mem_Loc = (unsigned char*)ARRAY_DATA; //Memory location of the array data
 	int sizeD = sizeof(ARRAY_DATA[0]);          //data type size of the array data
 
 	cout << "Before swap: " << ARRAY_DATA[0]<<", "<<ARRAY_DATA[1]<<"\n";
@@ -18,7 +18,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	//Memory Swap------------------------------------------------------------------------------
 	memcpy(temp, Mem_Loc + 0 * sizeD, sizeD);
-        memcpy(Mem_Loc + 0 * sizeD, Mem_Loc + 1 * sizeD, sizeD);
+    memcpy(Mem_Loc + 0 * sizeD, Mem_Loc + 1 * sizeD, sizeD);
 	memcpy(Mem_Loc + 1 * sizeD, temp, sizeD);
 	//-----------------------------------------------------------------------------------------
 
